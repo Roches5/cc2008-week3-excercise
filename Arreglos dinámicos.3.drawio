@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="Ml-8gjE6P27ol3pH1-z3">
+    <mxGraphModel dx="3284" dy="1329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-2" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="main" vertex="1">
+          <mxGeometry height="60" width="140" x="440" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-4" parent="UdTzfiDVoo0eGrk-RkCm-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+main (String[])args:void" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-7" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ImageEditorController" vertex="1">
+          <mxGeometry height="240" width="230" x="210" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-33" parent="UdTzfiDVoo0eGrk-RkCm-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-ImageEditorView view&lt;div&gt;-ImageEditorModel model&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ImageEditorController&lt;/div&gt;&lt;div&gt;-handleLoadImage():void&lt;/div&gt;&lt;div&gt;-handleNegativeFilter():void&lt;/div&gt;&lt;div&gt;-handleGrayscaleFilter():&lt;/div&gt;&lt;div&gt;-handlebrightnessFilter():void&lt;/div&gt;&lt;div&gt;-handleUndo():void&lt;/div&gt;&lt;div&gt;-handleReset():void&lt;/div&gt;&lt;div&gt;handleSave():void&lt;/div&gt;&lt;div&gt;refresh():void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22text%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3BspacingLeft%3D4%3BspacingRight%3D4%3Boverflow%3Dhidden%3Bpoints%3D%5B%5B0%2C0.5%5D%2C%5B1%2C0.5%5D%5D%3BportConstraint%3Deastwest%3Brotatable%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22Item%201%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2230%22%20width%3D%22140%22%20x%3D%22470%22%20y%3D%22460%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3Ed&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ImageEditorView" vertex="1">
+          <mxGeometry height="330" width="350" x="520" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-14" parent="UdTzfiDVoo0eGrk-RkCm-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="-ImagePanel originalImagePanel&lt;div&gt;-ImagePanel resultImagePanel&lt;/div&gt;&lt;div&gt;-JList historyList&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ addLoadImageListener(l: ActionListener): void&lt;br/&gt;+ addNegativeListener(l: ActionListener): void&lt;br/&gt;+ addGrayscaleListener(l: ActionListener): void&lt;br/&gt;+ addBrightnessListener(l: ActionListener): void&lt;br/&gt;+ addUndoListener(l: ActionListener): void&lt;br/&gt;+ addResetListener(l: ActionListener): void&lt;br/&gt;+ addSaveListener(l: ActionListener): void&lt;br/&gt;+ showInputImageChooser(): File&lt;br/&gt;+ showOutputImageChooser(): File&lt;br/&gt;+ showBrightnessAmountDialog(): Integer&lt;br/&gt;+ showInfoDialogue(msg: String): void&lt;br/&gt;+ showOriginalImage(image: BufferedImage): void&lt;br/&gt;+ showResultImage(image: BufferedImage): void&lt;br/&gt;+ updateHistory(filters: List&amp;lt;String&amp;gt;): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="350" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-20" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="UdTzfiDVoo0eGrk-RkCm-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="240" as="sourcePoint" />
+            <mxPoint x="580" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-24" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ImageUtils" vertex="1">
+          <mxGeometry height="175" width="160" x="-100" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-26" parent="UdTzfiDVoo0eGrk-RkCm-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ load(filename: String): Image {static}&lt;br/&gt;+ save(image: Image, filename: String): void {static}&lt;br/&gt;+ toBufferedImage(image: Image): BufferedImage {static}" vertex="1">
+          <mxGeometry height="145" width="160" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-28" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="585" as="sourcePoint" />
+            <mxPoint x="30" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-34" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ImageEditor" vertex="1">
+          <mxGeometry height="170" width="140" x="100" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-36" parent="UdTzfiDVoo0eGrk-RkCm-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- og: Image&lt;br/&gt;+ ImageEditor(og: Image)&lt;br/&gt;+ negative(): Image&lt;br/&gt;+ grayscale(): Image&lt;br/&gt;+ brightness(amount: int): Image&lt;br/&gt;- clamp(value: int): int" vertex="1">
+          <mxGeometry height="140" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="580" as="sourcePoint" />
+            <mxPoint x="150" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-38" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ImageNotFoundException" vertex="1">
+          <mxGeometry height="85" width="240" x="300" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-40" parent="UdTzfiDVoo0eGrk-RkCm-38" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ ImageNotFoundException(message: String)" vertex="1">
+          <mxGeometry height="55" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-41" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ImageHistoryException" vertex="1">
+          <mxGeometry height="100" width="260" x="560" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-43" parent="UdTzfiDVoo0eGrk-RkCm-41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ EmptyHistoryException(message: String)" vertex="1">
+          <mxGeometry height="70" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-47" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="570" as="sourcePoint" />
+            <mxPoint x="410" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-48" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="560" as="sourcePoint" />
+            <mxPoint x="670" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-49" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="770" y="630" as="sourcePoint" />
+            <mxPoint x="905" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-50" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ImagePanel" vertex="1">
+          <mxGeometry height="140" width="260" x="860" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-51" parent="UdTzfiDVoo0eGrk-RkCm-50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- image: BufferedImage&lt;br/&gt;- preserveAspectRatio: boolean&lt;br/&gt;+ setImage(image: BufferedImage): void&lt;br/&gt;+ getImage(): BufferedImage" vertex="1">
+          <mxGeometry height="110" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-52" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint y="880" as="sourcePoint" />
+            <mxPoint y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-53" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Image" vertex="1">
+          <mxGeometry height="190" width="200" x="-90" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-54" parent="UdTzfiDVoo0eGrk-RkCm-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- pixels: Pixel[][]&lt;br/&gt;+ Image(height: int, width: int)&lt;br/&gt;+ Image(pixels: Pixel[][])&lt;br/&gt;+ getHeight(): int&lt;br/&gt;+ getWidth(): int&lt;br/&gt;+ getPixel(row: int, col: int): Pixel&lt;br/&gt;+ setPixel(row: int, col: int, p: Pixel): void" vertex="1">
+          <mxGeometry height="160" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-55" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Pixel" vertex="1">
+          <mxGeometry height="170" width="140" x="-60" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-56" parent="UdTzfiDVoo0eGrk-RkCm-55" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ r: int&amp;nbsp;&lt;div&gt;+ g: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ b: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Pixel(r: int, g: int, b: int)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UdTzfiDVoo0eGrk-RkCm-57" edge="1" parent="1" source="UdTzfiDVoo0eGrk-RkCm-53" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="UdTzfiDVoo0eGrk-RkCm-55" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="9.38" y="1250" as="sourcePoint" />
+            <mxPoint x="9.38" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
